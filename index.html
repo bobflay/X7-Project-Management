@@ -2620,11 +2620,698 @@
 
             </div>
         </div>
+
+        <!-- Slide 33 - Introduction to User Stories -->
+        <div class="slide">
+            <h1>Creating User Stories in Azure DevOps</h1>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <div style="font-size: 4em; margin-bottom: 15px;">📝</div>
+                    <p style="font-size: 1.2em; color: #334155; font-style: italic;">
+                        User stories are the foundation of Agile development
+                    </p>
+                </div>
+
+                <!-- What is a User Story -->
+                <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #0078d4; margin-bottom: 30px;">
+                    <h2 style="color: #0078d4; margin-top: 0; margin-bottom: 20px; font-size: 1.6em;">❓ What is a User Story?</h2>
+                    <p style="color: #1e3a8a; font-size: 1.15em; line-height: 1.8; margin-bottom: 25px;">
+                        A <strong>user story</strong> is a simple description of a feature from an end user's perspective. It describes <strong>who</strong> wants the feature, <strong>what</strong> they want, and <strong>why</strong> they want it.
+                    </p>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+                        <h3 style="color: #0078d4; margin-top: 0; margin-bottom: 20px; font-size: 1.3em; text-align: center;">📋 Standard Format</h3>
+                        <div style="background: #f8fafc; padding: 25px; border-radius: 8px; border: 3px solid #0078d4;">
+                            <p style="color: #1e40af; font-size: 1.3em; line-height: 2; margin: 0; text-align: center; font-weight: 500;">
+                                <strong>As a</strong> <span style="color: #0078d4;">[type of user]</span><br/>
+                                <strong>I want</strong> <span style="color: #0078d4;">[goal/desire]</span><br/>
+                                <strong>So that</strong> <span style="color: #0078d4;">[benefit/value]</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: #e0f2fe; padding: 20px; border-radius: 10px;">
+                        <h3 style="color: #0078d4; margin-top: 0; margin-bottom: 15px; font-size: 1.2em;">✨ Example:</h3>
+                        <p style="color: #1e40af; font-size: 1.1em; line-height: 1.9; margin: 0;">
+                            <strong>As a</strong> <span style="color: #0078d4; font-weight: 600;">user</span><br/>
+                            <strong>I want</strong> <span style="color: #0078d4; font-weight: 600;">to view events happening near my location</span><br/>
+                            <strong>So that</strong> <span style="color: #0078d4; font-weight: 600;">I can discover activities to attend</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Key Components -->
+                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #10b981; margin-bottom: 30px;">
+                    <h2 style="color: #059669; margin-top: 0; margin-bottom: 25px; font-size: 1.6em;">🔑 Essential Components of a User Story</h2>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="font-size: 2.5em; text-align: center; margin-bottom: 15px;">📖</div>
+                            <h3 style="color: #059669; margin: 0 0 15px 0; font-size: 1.2em; text-align: center;">Description</h3>
+                            <p style="color: #334155; line-height: 1.8; font-size: 0.95em; margin: 0;">
+                                A brief explanation of the feature in plain language. What will the user actually do or experience?
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="font-size: 2.5em; text-align: center; margin-bottom: 15px;">✅</div>
+                            <h3 style="color: #059669; margin: 0 0 15px 0; font-size: 1.2em; text-align: center;">Acceptance Criteria</h3>
+                            <p style="color: #334155; line-height: 1.8; font-size: 0.95em; margin: 0;">
+                                Specific, testable conditions that must be met for the story to be considered complete. Usually 3-7 criteria.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="font-size: 2.5em; text-align: center; margin-bottom: 15px;">📊</div>
+                            <h3 style="color: #059669; margin: 0 0 15px 0; font-size: 1.2em; text-align: center;">Story Points</h3>
+                            <p style="color: #334155; line-height: 1.8; font-size: 0.95em; margin: 0;">
+                                An estimate of effort/complexity (typically using Fibonacci: 1, 2, 3, 5, 8, 13...). Used for sprint planning.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="font-size: 2.5em; text-align: center; margin-bottom: 15px;">🎯</div>
+                            <h3 style="color: #059669; margin: 0 0 15px 0; font-size: 1.2em; text-align: center;">Priority</h3>
+                            <p style="color: #334155; line-height: 1.8; font-size: 0.95em; margin: 0;">
+                                Importance ranking (High, Medium, Low) or numbered priority. Helps Product Owner order the backlog.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); padding: 20px; border-radius: 10px; border: 2px solid #0284c7; text-align: center;">
+                    <p style="color: #075985; font-size: 1em; line-height: 1.7; margin: 0;">
+                        <strong>💡 Remember:</strong> Good user stories follow the <strong>INVEST</strong> principle: Independent, Negotiable, Valuable, Estimable, Small, Testable
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 34 - How to Create User Story in Azure DevOps -->
+        <div class="slide">
+            <h1>How to Create a User Story in Azure DevOps</h1>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <div style="font-size: 3.5em; margin-bottom: 10px;">⚙️</div>
+                    <p style="font-size: 1.2em; color: #334155; font-style: italic;">
+                        Step-by-step guide to creating your first user story
+                    </p>
+                </div>
+
+                <!-- Step 1 -->
+                <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #2563eb; margin-bottom: 25px;">
+                    <h2 style="color: #1e40af; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">1️⃣ Navigate to Azure Boards</h2>
+                    <div style="background: white; padding: 20px; border-radius: 10px;">
+                        <ul style="color: #334155; line-height: 2; font-size: 1.05em; margin: 0;">
+                            <li>Open your Azure DevOps project</li>
+                            <li>Click on <strong>"Boards"</strong> in the left sidebar</li>
+                            <li>Select <strong>"Work Items"</strong> or <strong>"Backlogs"</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #10b981; margin-bottom: 25px;">
+                    <h2 style="color: #059669; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">2️⃣ Create New Work Item</h2>
+                    <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                        <ul style="color: #334155; line-height: 2; font-size: 1.05em; margin: 0;">
+                            <li>Click the <strong>"+ New Work Item"</strong> button at the top</li>
+                            <li>Select <strong>"User Story"</strong> from the dropdown</li>
+                            <li>A new form will open on the right side</li>
+                        </ul>
+                    </div>
+                    <div style="background: #ecfdf5; padding: 15px; border-radius: 8px; border: 2px solid #10b981;">
+                        <p style="color: #065f46; font-size: 0.95em; margin: 0; line-height: 1.7;">
+                            <strong>💡 Alternative:</strong> If using Agile process template, you'll see "User Story". If using Scrum template, you'll see "Product Backlog Item" (PBI). Both work the same way!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #f59e0b; margin-bottom: 25px;">
+                    <h2 style="color: #b45309; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">3️⃣ Fill in Required Fields</h2>
+                    <div style="background: white; padding: 25px; border-radius: 10px;">
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #b45309; margin: 0 0 10px 0; font-size: 1.1em;">📝 Title (Required)</h3>
+                            <div style="background: #f8fafc; padding: 15px; border-radius: 6px; border: 2px solid #cbd5e1;">
+                                <p style="color: #334155; margin: 0; font-size: 1em;">
+                                    Example: <strong style="color: #f59e0b;">"Browse Nearby Events"</strong> or <strong style="color: #f59e0b;">"User can search and filter events"</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #b45309; margin: 0 0 10px 0; font-size: 1.1em;">📖 Description (Optional but Recommended)</h3>
+                            <div style="background: #f8fafc; padding: 15px; border-radius: 6px; border: 2px solid #cbd5e1;">
+                                <p style="color: #334155; margin: 0; font-size: 0.95em; line-height: 1.7;">
+                                    Include the <strong>As a/I want/So that</strong> format here, plus a brief explanation of what the feature does.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #b45309; margin: 0 0 10px 0; font-size: 1.1em;">✅ Acceptance Criteria</h3>
+                            <div style="background: #f8fafc; padding: 15px; border-radius: 6px; border: 2px solid #cbd5e1;">
+                                <p style="color: #334155; margin: 0; font-size: 0.95em; line-height: 1.7;">
+                                    List specific, testable conditions. Use checkboxes or bullet points. Example:<br/>
+                                    <span style="display: inline-block; margin-top: 10px;">✔ App detects location permissions<br/>
+                                    ✔ Events within 10-50 km are displayed<br/>
+                                    ✔ Each event shows title, date, location, price</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div>
+                                <h3 style="color: #b45309; margin: 0 0 10px 0; font-size: 1.1em;">👤 Assigned To</h3>
+                                <div style="background: #f8fafc; padding: 12px; border-radius: 6px; border: 2px solid #cbd5e1;">
+                                    <p style="color: #334155; margin: 0; font-size: 0.9em;">Select team member</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 style="color: #b45309; margin: 0 0 10px 0; font-size: 1.1em;">🎯 Priority</h3>
+                                <div style="background: #f8fafc; padding: 12px; border-radius: 6px; border: 2px solid #cbd5e1;">
+                                    <p style="color: #334155; margin: 0; font-size: 0.9em;">1 (High) to 4 (Low)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #dc2626;">
+                    <h2 style="color: #b91c1c; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">4️⃣ Save & Close</h2>
+                    <div style="background: white; padding: 20px; border-radius: 10px;">
+                        <ul style="color: #334155; line-height: 2; font-size: 1.05em; margin: 0;">
+                            <li>Click <strong>"Save & Close"</strong> button at the top</li>
+                            <li>Your user story is now created and appears in the backlog</li>
+                            <li>You can reopen it anytime to add details, tasks, or links</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 35 - Real Example: Browse Nearby Events -->
+        <div class="slide">
+            <h1>User Story Example 1: Browse Nearby Events</h1>
+
+            <div style="max-width: 1100px; margin: 0 auto;">
+
+                <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #0078d4; margin-bottom: 30px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 25px;">
+                        <div style="background: #0078d4; color: white; width: 60px; height: 60px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.8em; margin-right: 20px; box-shadow: 0 4px 12px rgba(0, 120, 212, 0.4);">📍</div>
+                        <div>
+                            <h2 style="color: #0078d4; margin: 0; font-size: 2em;">Browse Nearby Events</h2>
+                            <p style="color: #64748b; margin: 5px 0 0 0; font-size: 1em;">Event Discovery Mobile App</p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 25px;">
+                        <h3 style="color: #0078d4; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">📝 User Story</h3>
+                        <div style="background: #f8fafc; padding: 25px; border-radius: 8px; border-left: 4px solid #0078d4;">
+                            <p style="color: #1e40af; font-size: 1.2em; line-height: 2; margin: 0;">
+                                <strong>As a</strong> <span style="color: #0078d4; font-weight: 600;">user</span><br/>
+                                <strong>I want</strong> <span style="color: #0078d4; font-weight: 600;">to view events happening near my location</span><br/>
+                                <strong>So that</strong> <span style="color: #0078d4; font-weight: 600;">I can discover activities to attend</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 25px;">
+                        <h3 style="color: #0078d4; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">📖 Description</h3>
+                        <p style="color: #334155; font-size: 1.1em; line-height: 1.8; margin: 0;">
+                            Users open the app and see a list of events filtered by distance/location. They can scroll through, see basic info, and select an event to see more details.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px;">
+                        <h3 style="color: #059669; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">✅ Acceptance Criteria</h3>
+                        <div style="display: grid; gap: 15px;">
+                            <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; display: flex; align-items: start;">
+                                <span style="color: #10b981; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #065f46; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>App detects or prompts for location permissions</strong>
+                                </p>
+                            </div>
+                            <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; display: flex; align-items: start;">
+                                <span style="color: #10b981; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #065f46; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>Events within a defined radius (e.g., 10–50 km) are displayed</strong>
+                                </p>
+                            </div>
+                            <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; display: flex; align-items: start;">
+                                <span style="color: #10b981; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #065f46; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>Each event card shows title, date, location, and price</strong>
+                                </p>
+                            </div>
+                            <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; display: flex; align-items: start;">
+                                <span style="color: #10b981; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #065f46; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>User can tap on an event to see full details</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                    <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                        <h4 style="color: #b45309; margin: 0 0 10px 0; font-size: 1.1em;">📊 Story Points</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="color: #334155; margin: 0; font-size: 1.8em; font-weight: bold;">5</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                        <h4 style="color: #b91c1c; margin: 0 0 10px 0; font-size: 1.1em;">🎯 Priority</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="color: #334155; margin: 0; font-size: 1.8em; font-weight: bold;">1 (High)</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                        <h4 style="color: #7c3aed; margin: 0 0 10px 0; font-size: 1.1em;">🏷️ Tags</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="color: #334155; margin: 0; font-size: 1em;">Mobile, Location</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 36 - Real Example: Search & Filter Events -->
+        <div class="slide">
+            <h1>User Story Example 2: Search & Filter Events</h1>
+
+            <div style="max-width: 1100px; margin: 0 auto;">
+
+                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #10b981; margin-bottom: 30px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 25px;">
+                        <div style="background: #10b981; color: white; width: 60px; height: 60px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.8em; margin-right: 20px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);">🔍</div>
+                        <div>
+                            <h2 style="color: #059669; margin: 0; font-size: 2em;">Search & Filter Events</h2>
+                            <p style="color: #64748b; margin: 5px 0 0 0; font-size: 1em;">Event Discovery Mobile App</p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 25px;">
+                        <h3 style="color: #059669; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">📝 User Story</h3>
+                        <div style="background: #f8fafc; padding: 25px; border-radius: 8px; border-left: 4px solid #10b981;">
+                            <p style="color: #065f46; font-size: 1.2em; line-height: 2; margin: 0;">
+                                <strong>As a</strong> <span style="color: #10b981; font-weight: 600;">user</span><br/>
+                                <strong>I want</strong> <span style="color: #10b981; font-weight: 600;">to search for specific events and apply filters</span><br/>
+                                <strong>So that</strong> <span style="color: #10b981; font-weight: 600;">I can quickly find events matching my preferences</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 25px;">
+                        <h3 style="color: #059669; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">📖 Description</h3>
+                        <p style="color: #334155; font-size: 1.1em; line-height: 1.8; margin: 0;">
+                            Users search by keywords (concert, football match, etc.), dates, categories (sports, music, comedy), or price range.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px;">
+                        <h3 style="color: #059669; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">✅ Acceptance Criteria</h3>
+                        <div style="display: grid; gap: 15px;">
+                            <div style="background: #ecfdf5; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; display: flex; align-items: start;">
+                                <span style="color: #10b981; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #065f46; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>Search bar allows keyword search</strong>
+                                </p>
+                            </div>
+                            <div style="background: #ecfdf5; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; display: flex; align-items: start;">
+                                <span style="color: #10b981; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #065f46; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>Filter options include date range, price range, and category</strong>
+                                </p>
+                            </div>
+                            <div style="background: #ecfdf5; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; display: flex; align-items: start;">
+                                <span style="color: #10b981; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #065f46; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>Results update dynamically based on filter criteria</strong>
+                                </p>
+                            </div>
+                            <div style="background: #ecfdf5; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; display: flex; align-items: start;">
+                                <span style="color: #10b981; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #065f46; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>User can reset filters to view all results again</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                    <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                        <h4 style="color: #b45309; margin: 0 0 10px 0; font-size: 1.1em;">📊 Story Points</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="color: #334155; margin: 0; font-size: 1.8em; font-weight: bold;">8</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                        <h4 style="color: #b91c1c; margin: 0 0 10px 0; font-size: 1.1em;">🎯 Priority</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="color: #334155; margin: 0; font-size: 1.8em; font-weight: bold;">1 (High)</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                        <h4 style="color: #7c3aed; margin: 0 0 10px 0; font-size: 1.1em;">🏷️ Tags</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="color: #334155; margin: 0; font-size: 1em;">Search, Filters</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 37 - Real Example: Event Booking -->
+        <div class="slide">
+            <h1>User Story Example 3: Event Booking & Ticket Purchase</h1>
+
+            <div style="max-width: 1100px; margin: 0 auto;">
+
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #f59e0b; margin-bottom: 30px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 25px;">
+                        <div style="background: #f59e0b; color: white; width: 60px; height: 60px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.8em; margin-right: 20px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);">🎟️</div>
+                        <div>
+                            <h2 style="color: #b45309; margin: 0; font-size: 2em;">Event Booking & Ticket Purchase</h2>
+                            <p style="color: #64748b; margin: 5px 0 0 0; font-size: 1em;">Event Discovery Mobile App</p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 25px;">
+                        <h3 style="color: #b45309; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">📝 User Story</h3>
+                        <div style="background: #f8fafc; padding: 25px; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                            <p style="color: #92400e; font-size: 1.2em; line-height: 2; margin: 0;">
+                                <strong>As a</strong> <span style="color: #f59e0b; font-weight: 600;">user</span><br/>
+                                <strong>I want</strong> <span style="color: #f59e0b; font-weight: 600;">to book a ticket for an event</span><br/>
+                                <strong>So that</strong> <span style="color: #f59e0b; font-weight: 600;">I can secure my spot</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 25px;">
+                        <h3 style="color: #b45309; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">📖 Description</h3>
+                        <p style="color: #334155; font-size: 1.1em; line-height: 1.8; margin: 0;">
+                            Users select an event, choose number/type of tickets, and complete booking through supported payment methods.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px;">
+                        <h3 style="color: #059669; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">✅ Acceptance Criteria</h3>
+                        <div style="display: grid; gap: 15px;">
+                            <div style="background: #fffbeb; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; display: flex; align-items: start;">
+                                <span style="color: #f59e0b; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #92400e; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>User can select ticket quantity</strong>
+                                </p>
+                            </div>
+                            <div style="background: #fffbeb; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; display: flex; align-items: start;">
+                                <span style="color: #f59e0b; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #92400e; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>System validates availability (shows errors if sold out)</strong>
+                                </p>
+                            </div>
+                            <div style="background: #fffbeb; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; display: flex; align-items: start;">
+                                <span style="color: #f59e0b; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #92400e; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>Supported payment gateways process payment</strong>
+                                </p>
+                            </div>
+                            <div style="background: #fffbeb; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; display: flex; align-items: start;">
+                                <span style="color: #f59e0b; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #92400e; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>Booking confirmation screen appears after success</strong>
+                                </p>
+                            </div>
+                            <div style="background: #fffbeb; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; display: flex; align-items: start;">
+                                <span style="color: #f59e0b; font-size: 1.5em; margin-right: 15px;">✔</span>
+                                <p style="color: #92400e; font-size: 1.05em; line-height: 1.7; margin: 0;">
+                                    <strong>User receives a digital ticket or QR code</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                    <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                        <h4 style="color: #b45309; margin: 0 0 10px 0; font-size: 1.1em;">📊 Story Points</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="color: #334155; margin: 0; font-size: 1.8em; font-weight: bold;">13</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                        <h4 style="color: #b91c1c; margin: 0 0 10px 0; font-size: 1.1em;">🎯 Priority</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="color: #334155; margin: 0; font-size: 1.8em; font-weight: bold;">1 (High)</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); padding: 20px; border-radius: 10px; text-align: center;">
+                        <h4 style="color: #7c3aed; margin: 0 0 10px 0; font-size: 1.1em;">🏷️ Tags</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="color: #334155; margin: 0; font-size: 1em;">Payment, Booking</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 38 - More Examples: Saved Events & Manage Tickets -->
+        <div class="slide">
+            <h1>Additional User Story Examples</h1>
+
+            <div style="max-width: 1100px; margin: 0 auto;">
+
+                <!-- User Story 4: Saved Events -->
+                <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #dc2626; margin-bottom: 25px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="background: #dc2626; color: white; width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5em; margin-right: 15px;">❤️</div>
+                        <h2 style="color: #b91c1c; margin: 0; font-size: 1.6em;">Saved Events / Wishlist</h2>
+                    </div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid #dc2626;">
+                            <p style="color: #991b1b; font-size: 1.05em; line-height: 1.9; margin: 0;">
+                                <strong>As a</strong> user<br/>
+                                <strong>I want</strong> to save events I like<br/>
+                                <strong>So that</strong> I can revisit them later or decide before booking
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px;">
+                        <h3 style="color: #b91c1c; margin-top: 0; margin-bottom: 15px; font-size: 1.2em;">✅ Acceptance Criteria</h3>
+                        <div style="display: grid; gap: 12px;">
+                            <div style="background: #fef2f2; padding: 15px; border-radius: 8px; display: flex; align-items: start;">
+                                <span style="color: #dc2626; margin-right: 12px;">✔</span>
+                                <p style="color: #991b1b; font-size: 0.95em; margin: 0;">Users can tap a "save" icon on any event</p>
+                            </div>
+                            <div style="background: #fef2f2; padding: 15px; border-radius: 8px; display: flex; align-items: start;">
+                                <span style="color: #dc2626; margin-right: 12px;">✔</span>
+                                <p style="color: #991b1b; font-size: 0.95em; margin: 0;">Saved events are accessible under a dedicated menu</p>
+                            </div>
+                            <div style="background: #fef2f2; padding: 15px; border-radius: 8px; display: flex; align-items: start;">
+                                <span style="color: #dc2626; margin-right: 12px;">✔</span>
+                                <p style="color: #991b1b; font-size: 0.95em; margin: 0;">Removing an event updates the saved list</p>
+                            </div>
+                            <div style="background: #fef2f2; padding: 15px; border-radius: 8px; display: flex; align-items: start;">
+                                <span style="color: #dc2626; margin-right: 12px;">✔</span>
+                                <p style="color: #991b1b; font-size: 0.95em; margin: 0;">Saved events persist after app restart</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
+                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+                            <p style="color: #64748b; margin: 0 0 5px 0; font-size: 0.9em;">Story Points</p>
+                            <p style="color: #334155; margin: 0; font-size: 1.5em; font-weight: bold;">3</p>
+                        </div>
+                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+                            <p style="color: #64748b; margin: 0 0 5px 0; font-size: 0.9em;">Priority</p>
+                            <p style="color: #334155; margin: 0; font-size: 1.5em; font-weight: bold;">2 (Medium)</p>
+                        </div>
+                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+                            <p style="color: #64748b; margin: 0 0 5px 0; font-size: 0.9em;">Tags</p>
+                            <p style="color: #334155; margin: 0; font-size: 1em;">Wishlist, UX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Story 5: Manage Tickets -->
+                <div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #7c3aed;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="background: #7c3aed; color: white; width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5em; margin-right: 15px;">📱</div>
+                        <h2 style="color: #7c3aed; margin: 0; font-size: 1.6em;">View & Manage My Tickets</h2>
+                    </div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid #7c3aed;">
+                            <p style="color: #6b21a8; font-size: 1.05em; line-height: 1.9; margin: 0;">
+                                <strong>As a</strong> user<br/>
+                                <strong>I want</strong> to access my booked tickets in one place<br/>
+                                <strong>So that</strong> I can view, present, or manage them when needed
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px;">
+                        <h3 style="color: #7c3aed; margin-top: 0; margin-bottom: 15px; font-size: 1.2em;">✅ Acceptance Criteria</h3>
+                        <div style="display: grid; gap: 12px;">
+                            <div style="background: #faf5ff; padding: 15px; border-radius: 8px; display: flex; align-items: start;">
+                                <span style="color: #7c3aed; margin-right: 12px;">✔</span>
+                                <p style="color: #6b21a8; font-size: 0.95em; margin: 0;">"My Tickets" section displays all past and active tickets</p>
+                            </div>
+                            <div style="background: #faf5ff; padding: 15px; border-radius: 8px; display: flex; align-items: start;">
+                                <span style="color: #7c3aed; margin-right: 12px;">✔</span>
+                                <p style="color: #6b21a8; font-size: 0.95em; margin: 0;">Each ticket shows event name, date, seat/category, status (active/expired)</p>
+                            </div>
+                            <div style="background: #faf5ff; padding: 15px; border-radius: 8px; display: flex; align-items: start;">
+                                <span style="color: #7c3aed; margin-right: 12px;">✔</span>
+                                <p style="color: #6b21a8; font-size: 0.95em; margin: 0;">User can open a ticket to display QR code or entry barcode</p>
+                            </div>
+                            <div style="background: #faf5ff; padding: 15px; border-radius: 8px; display: flex; align-items: start;">
+                                <span style="color: #7c3aed; margin-right: 12px;">✔</span>
+                                <p style="color: #6b21a8; font-size: 0.95em; margin: 0;">If cancellation rules allow, user can request cancellation/refund</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
+                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+                            <p style="color: #64748b; margin: 0 0 5px 0; font-size: 0.9em;">Story Points</p>
+                            <p style="color: #334155; margin: 0; font-size: 1.5em; font-weight: bold;">5</p>
+                        </div>
+                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+                            <p style="color: #64748b; margin: 0 0 5px 0; font-size: 0.9em;">Priority</p>
+                            <p style="color: #334155; margin: 0; font-size: 1.5em; font-weight: bold;">1 (High)</p>
+                        </div>
+                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+                            <p style="color: #64748b; margin: 0 0 5px 0; font-size: 0.9em;">Tags</p>
+                            <p style="color: #334155; margin: 0; font-size: 1em;">Tickets, Profile</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 39 - Best Practices & Tips -->
+        <div class="slide">
+            <h1>User Story Best Practices in Azure DevOps</h1>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <div style="font-size: 3.5em; margin-bottom: 15px;">💡</div>
+                    <p style="font-size: 1.2em; color: #334155; font-style: italic;">
+                        Tips for writing effective user stories that drive successful development
+                    </p>
+                </div>
+
+                <!-- Best Practices -->
+                <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #0078d4; margin-bottom: 30px;">
+                    <h2 style="color: #0078d4; margin-top: 0; margin-bottom: 25px; font-size: 1.6em;">✅ Do's</h2>
+
+                    <div style="display: grid; gap: 20px;">
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">📝 Keep Stories Small</h3>
+                            <p style="color: #334155; line-height: 1.8; margin: 0; font-size: 0.95em;">
+                                Each story should be completable within one sprint (1-2 weeks). If a story is too large, break it into smaller stories or create an Epic.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">✅ Write Clear Acceptance Criteria</h3>
+                            <p style="color: #334155; line-height: 1.8; margin: 0; font-size: 0.95em;">
+                                Make criteria specific, measurable, and testable. Use checkboxes. Each criterion should be verifiable by QA or stakeholders.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">👥 Focus on User Value</h3>
+                            <p style="color: #334155; line-height: 1.8; margin: 0; font-size: 0.95em;">
+                                Always explain the "why" (benefit). Stories should deliver value to end users, not just technical tasks. Ask: "What problem does this solve?"
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">🔗 Link Related Items</h3>
+                            <p style="color: #334155; line-height: 1.8; margin: 0; font-size: 0.95em;">
+                                In Azure DevOps, link user stories to Epics, Features, Tasks, and Bugs. This creates traceability and helps with reporting.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">🏷️ Use Tags & Labels</h3>
+                            <p style="color: #334155; line-height: 1.8; margin: 0; font-size: 0.95em;">
+                                Add tags like "Mobile", "Backend", "API", "UI/UX" to categorize stories. This helps with filtering and organizing your backlog.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Don'ts -->
+                <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #dc2626; margin-bottom: 30px;">
+                    <h2 style="color: #b91c1c; margin-top: 0; margin-bottom: 25px; font-size: 1.6em;">❌ Don'ts</h2>
+
+                    <div style="display: grid; gap: 20px;">
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #dc2626; margin: 0 0 12px 0; font-size: 1.2em;">❌ Don't Make Stories Too Technical</h3>
+                            <p style="color: #334155; line-height: 1.8; margin: 0; font-size: 0.95em;">
+                                Bad: "Implement JWT authentication middleware"<br/>
+                                Good: "As a user, I want to log in securely so that my account is protected"
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #dc2626; margin: 0 0 12px 0; font-size: 1.2em;">❌ Don't Skip the "So That" Part</h3>
+                            <p style="color: #334155; line-height: 1.8; margin: 0; font-size: 0.95em;">
+                                The benefit/value is crucial. It explains WHY the feature matters and helps the team understand priorities.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #dc2626; margin: 0 0 12px 0; font-size: 1.2em;">❌ Don't Write Vague Acceptance Criteria</h3>
+                            <p style="color: #334155; line-height: 1.8; margin: 0; font-size: 0.95em;">
+                                Bad: "System works properly"<br/>
+                                Good: "System displays error message when email format is invalid"
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #dc2626; margin: 0 0 12px 0; font-size: 1.2em;">❌ Don't Include Implementation Details</h3>
+                            <p style="color: #334155; line-height: 1.8; margin: 0; font-size: 0.95em;">
+                                User stories describe WHAT users want, not HOW to build it. Implementation details belong in Tasks or technical documentation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 25px; border-radius: 10px; border: 2px solid #f59e0b; text-align: center;">
+                    <p style="color: #92400e; font-size: 1.05em; line-height: 1.8; margin: 0;">
+                        <strong>🎯 Golden Rule:</strong> If your stakeholder or Product Owner can't understand the story, it's not written correctly. Keep it simple, clear, and user-focused!
+                    </p>
+                </div>
+
+            </div>
+        </div>
         </div>
     </div>
 
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">32</span>
+        <span id="current-slide">1</span> / <span id="total-slides">39</span>
     </div>
 
     <div class="navigation">
