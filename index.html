@@ -3794,11 +3794,530 @@
 
             </div>
         </div>
+
+        <!-- Slide 44 - Introduction to Queries in Azure DevOps -->
+        <div class="slide">
+            <h1>Queries in Azure DevOps</h1>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <div style="font-size: 4em; margin-bottom: 15px;">🔍</div>
+                    <p style="font-size: 1.2em; color: #334155; font-style: italic;">
+                        Find, filter, and organize work items efficiently
+                    </p>
+                </div>
+
+                <!-- What are Queries -->
+                <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #0078d4; margin-bottom: 30px;">
+                    <h2 style="color: #0078d4; margin-top: 0; margin-bottom: 20px; font-size: 1.6em;">❓ What are Queries?</h2>
+                    <p style="color: #1e3a8a; font-size: 1.15em; line-height: 1.8; margin-bottom: 25px;">
+                        <strong>Queries</strong> are powerful search tools in Azure DevOps that allow you to <strong>find, filter, and organize work items</strong> (user stories, bugs, tasks, etc.) based on specific criteria. Think of them as saved searches with advanced filtering capabilities.
+                    </p>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+                        <h3 style="color: #0078d4; margin-top: 0; margin-bottom: 20px; font-size: 1.3em;">🎯 Why Use Queries?</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="background: #f0f9ff; padding: 20px; border-radius: 8px;">
+                                <h4 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.1em;">📊 Track Work</h4>
+                                <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                    See all work items assigned to you, or all bugs in the current sprint
+                                </p>
+                            </div>
+                            <div style="background: #f0f9ff; padding: 20px; border-radius: 8px;">
+                                <h4 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.1em;">📈 Monitor Progress</h4>
+                                <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                    Track which stories are in progress, blocked, or completed
+                                </p>
+                            </div>
+                            <div style="background: #f0f9ff; padding: 20px; border-radius: 8px;">
+                                <h4 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.1em;">🔎 Find Issues</h4>
+                                <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                    Quickly locate high-priority bugs or overdue work items
+                                </p>
+                            </div>
+                            <div style="background: #f0f9ff; padding: 20px; border-radius: 8px;">
+                                <h4 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.1em;">📋 Generate Reports</h4>
+                                <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                    Create custom views for stakeholders and management
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #dbeafe; padding: 20px; border-radius: 10px;">
+                        <h3 style="color: #0078d4; margin-top: 0; margin-bottom: 15px; font-size: 1.2em;">✨ Key Features</h3>
+                        <ul style="color: #1e40af; line-height: 2; font-size: 1.05em; margin: 0;">
+                            <li><strong>Save and reuse:</strong> Create queries once, use them repeatedly</li>
+                            <li><strong>Share with team:</strong> Make queries available to everyone in your project</li>
+                            <li><strong>Multiple filters:</strong> Combine dozens of criteria to find exactly what you need</li>
+                            <li><strong>Real-time updates:</strong> Query results automatically update as work items change</li>
+                            <li><strong>Export results:</strong> Download to Excel for further analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Types of Queries -->
+                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #10b981; margin-bottom: 30px;">
+                    <h2 style="color: #059669; margin-top: 0; margin-bottom: 25px; font-size: 1.6em;">📂 Types of Queries</h2>
+
+                    <div style="display: grid; gap: 20px;">
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                                <div style="background: #10b981; color: white; width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5em; margin-right: 15px;">📋</div>
+                                <h3 style="color: #059669; margin: 0; font-size: 1.3em;">Flat List Query</h3>
+                            </div>
+                            <p style="color: #334155; line-height: 1.7; font-size: 1em; margin: 0 0 12px 0;">
+                                Returns a simple list of work items that match your criteria.
+                            </p>
+                            <div style="background: #f0fdf4; padding: 15px; border-radius: 8px;">
+                                <p style="color: #065f46; font-size: 0.95em; margin: 0; line-height: 1.7;">
+                                    <strong>Example:</strong> "Show me all user stories assigned to me that are in 'Active' state"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                                <div style="background: #10b981; color: white; width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5em; margin-right: 15px;">🌳</div>
+                                <h3 style="color: #059669; margin: 0; font-size: 1.3em;">Tree of Work Items Query</h3>
+                            </div>
+                            <p style="color: #334155; line-height: 1.7; font-size: 1em; margin: 0 0 12px 0;">
+                                Shows hierarchical relationships (parent-child). Useful for seeing user stories with their child tasks.
+                            </p>
+                            <div style="background: #f0fdf4; padding: 15px; border-radius: 8px;">
+                                <p style="color: #065f46; font-size: 0.95em; margin: 0; line-height: 1.7;">
+                                    <strong>Example:</strong> "Show me all user stories in the current sprint and their child tasks"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                                <div style="background: #10b981; color: white; width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5em; margin-right: 15px;">🔗</div>
+                                <h3 style="color: #059669; margin: 0; font-size: 1.3em;">Direct Links Query</h3>
+                            </div>
+                            <p style="color: #334155; line-height: 1.7; font-size: 1em; margin: 0 0 12px 0;">
+                                Finds work items linked to specific items. Useful for tracking dependencies and related work.
+                            </p>
+                            <div style="background: #f0fdf4; padding: 15px; border-radius: 8px;">
+                                <p style="color: #065f46; font-size: 0.95em; margin: 0; line-height: 1.7;">
+                                    <strong>Example:</strong> "Show me all bugs linked to user story #1234"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); padding: 20px; border-radius: 10px; border: 2px solid #0284c7; text-align: center;">
+                    <p style="color: #075985; font-size: 1em; line-height: 1.7; margin: 0;">
+                        <strong>💡 Tip:</strong> Azure DevOps comes with built-in queries (like "Assigned to Me"), but you can create custom queries tailored to your team's specific needs.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 45 - How to Create a Query -->
+        <div class="slide">
+            <h1>How to Create a Query in Azure DevOps</h1>
+
+            <div style="max-width: 1100px; margin: 0 auto;">
+
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <div style="font-size: 3.5em; margin-bottom: 10px;">⚙️</div>
+                    <p style="font-size: 1.2em; color: #334155; font-style: italic;">
+                        Step-by-step guide to building your first query
+                    </p>
+                </div>
+
+                <!-- Step 1 -->
+                <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #2563eb; margin-bottom: 25px;">
+                    <h2 style="color: #1e40af; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">1️⃣ Navigate to Queries</h2>
+                    <div style="background: white; padding: 20px; border-radius: 10px;">
+                        <ol style="color: #334155; line-height: 2; font-size: 1.05em; margin: 0;">
+                            <li>Open your Azure DevOps project</li>
+                            <li>Click on <strong>"Boards"</strong> in the left sidebar</li>
+                            <li>Select <strong>"Queries"</strong> from the submenu</li>
+                            <li>You'll see a list of existing queries (Shared Queries, My Queries, etc.)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #10b981; margin-bottom: 25px;">
+                    <h2 style="color: #059669; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">2️⃣ Create New Query</h2>
+                    <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                        <ol style="color: #334155; line-height: 2; font-size: 1.05em; margin: 0;">
+                            <li>Click the <strong>"+ New query"</strong> button</li>
+                            <li>A new query editor will open</li>
+                            <li>You'll see a blank query with one default clause</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #f59e0b; margin-bottom: 25px;">
+                    <h2 style="color: #b45309; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">3️⃣ Add Filter Clauses</h2>
+                    <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+                        <p style="color: #334155; font-size: 1.05em; line-height: 1.8; margin-bottom: 20px;">
+                            Each clause has three parts: <strong>Field</strong>, <strong>Operator</strong>, and <strong>Value</strong>
+                        </p>
+
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; margin-bottom: 20px;">
+                            <h3 style="color: #b45309; margin: 0 0 15px 0; font-size: 1.1em;">Example Clause:</h3>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; text-align: center;">
+                                <div style="background: white; padding: 15px; border-radius: 6px; border: 2px solid #cbd5e1;">
+                                    <p style="color: #64748b; margin: 0 0 5px 0; font-size: 0.9em; text-transform: uppercase;">Field</p>
+                                    <p style="color: #334155; margin: 0; font-size: 1.2em; font-weight: bold;">Assigned To</p>
+                                </div>
+                                <div style="background: white; padding: 15px; border-radius: 6px; border: 2px solid #cbd5e1;">
+                                    <p style="color: #64748b; margin: 0 0 5px 0; font-size: 0.9em; text-transform: uppercase;">Operator</p>
+                                    <p style="color: #334155; margin: 0; font-size: 1.2em; font-weight: bold;">=</p>
+                                </div>
+                                <div style="background: white; padding: 15px; border-radius: 6px; border: 2px solid #cbd5e1;">
+                                    <p style="color: #64748b; margin: 0 0 5px 0; font-size: 0.9em; text-transform: uppercase;">Value</p>
+                                    <p style="color: #334155; margin: 0; font-size: 1.2em; font-weight: bold;">@Me</p>
+                                </div>
+                            </div>
+                            <p style="color: #92400e; margin: 15px 0 0 0; font-size: 0.95em; text-align: center; font-style: italic;">
+                                This finds all work items assigned to the current user
+                            </p>
+                        </div>
+
+                        <div style="background: #fffbeb; padding: 20px; border-radius: 8px; border: 2px solid #f59e0b;">
+                            <h4 style="color: #b45309; margin: 0 0 15px 0; font-size: 1.1em;">Common Fields</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                                <ul style="color: #92400e; line-height: 1.8; font-size: 0.95em; margin: 0;">
+                                    <li><strong>Work Item Type</strong> (User Story, Bug, Task)</li>
+                                    <li><strong>State</strong> (New, Active, Resolved, Closed)</li>
+                                    <li><strong>Assigned To</strong> (team member name or @Me)</li>
+                                    <li><strong>Priority</strong> (1, 2, 3, 4)</li>
+                                </ul>
+                                <ul style="color: #92400e; line-height: 1.8; font-size: 0.95em; margin: 0;">
+                                    <li><strong>Iteration Path</strong> (Sprint name)</li>
+                                    <li><strong>Area Path</strong> (team or component)</li>
+                                    <li><strong>Tags</strong> (custom labels)</li>
+                                    <li><strong>Created Date</strong> (when item was created)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 20px; border-radius: 10px;">
+                        <h3 style="color: #b45309; margin: 0 0 15px 0; font-size: 1.1em;">➕ Add Multiple Clauses</h3>
+                        <p style="color: #334155; line-height: 1.7; font-size: 1em; margin: 0;">
+                            Click <strong>"+ Add new clause"</strong> to add more filters. Use <strong>AND</strong> when all conditions must be true, or <strong>OR</strong> when any condition can be true.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #dc2626; margin-bottom: 25px;">
+                    <h2 style="color: #b91c1c; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">4️⃣ Run & Save Query</h2>
+                    <div style="background: white; padding: 25px; border-radius: 10px;">
+                        <ol style="color: #334155; line-height: 2; font-size: 1.05em; margin: 0 0 20px 0;">
+                            <li>Click <strong>"Run query"</strong> to see results</li>
+                            <li>Review the list of work items that match your criteria</li>
+                            <li>Click <strong>"Save query"</strong> (disk icon) in the top toolbar</li>
+                            <li>Give it a descriptive name (e.g., "My Active User Stories")</li>
+                            <li>Choose to save under <strong>"My Queries"</strong> (private) or <strong>"Shared Queries"</strong> (team-wide)</li>
+                        </ol>
+
+                        <div style="background: #fef2f2; padding: 20px; border-radius: 8px; border: 2px solid #dc2626;">
+                            <p style="color: #991b1b; font-size: 1em; line-height: 1.7; margin: 0;">
+                                <strong>💡 Tip:</strong> After saving, your query appears in the sidebar and can be run anytime with a single click. Query results update automatically as work items change!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 46 - Real Query Examples -->
+        <div class="slide">
+            <h1>Practical Query Examples</h1>
+
+            <div style="max-width: 1100px; margin: 0 auto;">
+
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <div style="font-size: 3.5em; margin-bottom: 10px;">📝</div>
+                    <p style="font-size: 1.2em; color: #334155; font-style: italic;">
+                        Real-world queries you can use in your projects
+                    </p>
+                </div>
+
+                <!-- Example 1 -->
+                <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #0078d4; margin-bottom: 25px;">
+                    <h2 style="color: #0078d4; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">1️⃣ My Active Work Items</h2>
+                    <div style="background: white; padding: 25px; border-radius: 10px;">
+                        <p style="color: #334155; font-size: 1.05em; line-height: 1.7; margin-bottom: 20px;">
+                            <strong>Purpose:</strong> See all work items (stories, tasks, bugs) currently assigned to you
+                        </p>
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 2px solid #0078d4; margin-bottom: 15px;">
+                            <h3 style="color: #0078d4; margin: 0 0 15px 0; font-size: 1.1em;">Query Clauses:</h3>
+                            <div style="background: white; padding: 15px; border-radius: 6px; margin-bottom: 10px; border-left: 4px solid #0078d4;">
+                                <p style="color: #334155; margin: 0; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                                    <strong>Assigned To</strong> = <strong>@Me</strong>
+                                </p>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <div style="background: #0078d4; color: white; padding: 4px 12px; border-radius: 4px; margin-right: 10px; font-size: 0.9em; font-weight: bold;">AND</div>
+                            </div>
+                            <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #0078d4;">
+                                <p style="color: #334155; margin: 0; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                                    <strong>State</strong> = <strong>Active</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div style="background: #dbeafe; padding: 15px; border-radius: 8px;">
+                            <p style="color: #1e40af; margin: 0; font-size: 0.95em;">
+                                <strong>Result:</strong> Shows only work items you're working on right now
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 2 -->
+                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #10b981; margin-bottom: 25px;">
+                    <h2 style="color: #059669; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">2️⃣ High Priority Bugs</h2>
+                    <div style="background: white; padding: 25px; border-radius: 10px;">
+                        <p style="color: #334155; font-size: 1.05em; line-height: 1.7; margin-bottom: 20px;">
+                            <strong>Purpose:</strong> Find all high-priority bugs that need immediate attention
+                        </p>
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 2px solid #10b981; margin-bottom: 15px;">
+                            <h3 style="color: #059669; margin: 0 0 15px 0; font-size: 1.1em;">Query Clauses:</h3>
+                            <div style="background: white; padding: 15px; border-radius: 6px; margin-bottom: 10px; border-left: 4px solid #10b981;">
+                                <p style="color: #334155; margin: 0; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                                    <strong>Work Item Type</strong> = <strong>Bug</strong>
+                                </p>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <div style="background: #10b981; color: white; padding: 4px 12px; border-radius: 4px; margin-right: 10px; font-size: 0.9em; font-weight: bold;">AND</div>
+                            </div>
+                            <div style="background: white; padding: 15px; border-radius: 6px; margin-bottom: 10px; border-left: 4px solid #10b981;">
+                                <p style="color: #334155; margin: 0; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                                    <strong>Priority</strong> = <strong>1</strong>
+                                </p>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <div style="background: #10b981; color: white; padding: 4px 12px; border-radius: 4px; margin-right: 10px; font-size: 0.9em; font-weight: bold;">AND</div>
+                            </div>
+                            <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #10b981;">
+                                <p style="color: #334155; margin: 0; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                                    <strong>State</strong> <strong>&lt;&gt;</strong> <strong>Closed</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div style="background: #d1fae5; padding: 15px; border-radius: 8px;">
+                            <p style="color: #065f46; margin: 0; font-size: 0.95em;">
+                                <strong>Result:</strong> All high-priority bugs that haven't been closed yet
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 3 -->
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #f59e0b; margin-bottom: 25px;">
+                    <h2 style="color: #b45309; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">3️⃣ Current Sprint User Stories</h2>
+                    <div style="background: white; padding: 25px; border-radius: 10px;">
+                        <p style="color: #334155; font-size: 1.05em; line-height: 1.7; margin-bottom: 20px;">
+                            <strong>Purpose:</strong> View all user stories planned for the current sprint
+                        </p>
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 2px solid #f59e0b; margin-bottom: 15px;">
+                            <h3 style="color: #b45309; margin: 0 0 15px 0; font-size: 1.1em;">Query Clauses:</h3>
+                            <div style="background: white; padding: 15px; border-radius: 6px; margin-bottom: 10px; border-left: 4px solid #f59e0b;">
+                                <p style="color: #334155; margin: 0; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                                    <strong>Work Item Type</strong> = <strong>User Story</strong>
+                                </p>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <div style="background: #f59e0b; color: white; padding: 4px 12px; border-radius: 4px; margin-right: 10px; font-size: 0.9em; font-weight: bold;">AND</div>
+                            </div>
+                            <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #f59e0b;">
+                                <p style="color: #334155; margin: 0; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                                    <strong>Iteration Path</strong> = <strong>@CurrentIteration</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div style="background: #fde68a; padding: 15px; border-radius: 8px;">
+                            <p style="color: #92400e; margin: 0; font-size: 0.95em;">
+                                <strong>Result:</strong> All user stories in the active sprint (automatically updates when sprint changes)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 4 -->
+                <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); padding: 30px; border-radius: 12px; border-left: 6px solid #dc2626;">
+                    <h2 style="color: #b91c1c; margin-top: 0; margin-bottom: 20px; font-size: 1.4em;">4️⃣ Recently Completed Work</h2>
+                    <div style="background: white; padding: 25px; border-radius: 10px;">
+                        <p style="color: #334155; font-size: 1.05em; line-height: 1.7; margin-bottom: 20px;">
+                            <strong>Purpose:</strong> See what your team completed in the last 7 days
+                        </p>
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 2px solid #dc2626; margin-bottom: 15px;">
+                            <h3 style="color: #b91c1c; margin: 0 0 15px 0; font-size: 1.1em;">Query Clauses:</h3>
+                            <div style="background: white; padding: 15px; border-radius: 6px; margin-bottom: 10px; border-left: 4px solid #dc2626;">
+                                <p style="color: #334155; margin: 0; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                                    <strong>State</strong> = <strong>Closed</strong>
+                                </p>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <div style="background: #dc2626; color: white; padding: 4px 12px; border-radius: 4px; margin-right: 10px; font-size: 0.9em; font-weight: bold;">AND</div>
+                            </div>
+                            <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #dc2626;">
+                                <p style="color: #334155; margin: 0; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                                    <strong>Closed Date</strong> <strong>&gt;=</strong> <strong>@Today - 7</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div style="background: #fee2e2; padding: 15px; border-radius: 8px;">
+                            <p style="color: #991b1b; margin: 0; font-size: 0.95em;">
+                                <strong>Result:</strong> Everything closed in the past week - great for sprint reviews!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 47 - Query Best Practices & Advanced Features -->
+        <div class="slide">
+            <h1>Query Best Practices & Advanced Features</h1>
+
+            <div style="max-width: 1100px; margin: 0 auto;">
+
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <div style="font-size: 3.5em; margin-bottom: 10px;">⚡</div>
+                    <p style="font-size: 1.2em; color: #334155; font-style: italic;">
+                        Master queries to become more productive
+                    </p>
+                </div>
+
+                <!-- Best Practices -->
+                <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #0078d4; margin-bottom: 30px;">
+                    <h2 style="color: #0078d4; margin-top: 0; margin-bottom: 25px; font-size: 1.6em;">✅ Best Practices</h2>
+
+                    <div style="display: grid; gap: 20px;">
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">📝 Use Descriptive Names</h3>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Name queries clearly so team members understand their purpose. Bad: "Query 1". Good: "High Priority Bugs in Current Sprint"
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">🔄 Use Dynamic Values</h3>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Use <strong>@Me</strong>, <strong>@CurrentIteration</strong>, and <strong>@Today</strong> so queries automatically update without manual changes.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">📊 Organize with Folders</h3>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                In Shared Queries, create folders by team, sprint, or purpose. Example: "Sprint 10 Queries", "Bug Tracking", "Team Alpha Queries"
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">👥 Share with Team</h3>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Save useful queries to <strong>Shared Queries</strong> so everyone benefits. Personal queries go in <strong>My Queries</strong>.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <h3 style="color: #0078d4; margin: 0 0 12px 0; font-size: 1.2em;">⭐ Set Favorites</h3>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Click the star icon next to frequently used queries. Favorites appear at the top for quick access.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Features -->
+                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%); padding: 35px; border-radius: 12px; border-left: 6px solid #10b981; margin-bottom: 30px;">
+                    <h2 style="color: #059669; margin-top: 0; margin-bottom: 25px; font-size: 1.6em;">🚀 Advanced Features</h2>
+
+                    <div style="display: grid; gap: 20px;">
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                                <div style="background: #10b981; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.3em; margin-right: 15px;">📥</div>
+                                <h3 style="color: #059669; margin: 0; font-size: 1.2em;">Export to Excel</h3>
+                            </div>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Click the export icon to download query results to Excel. Perfect for reports, analysis, or presentations.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                                <div style="background: #10b981; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.3em; margin-right: 15px;">📧</div>
+                                <h3 style="color: #059669; margin: 0; font-size: 1.2em;">Email Query Results</h3>
+                            </div>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Share query results with stakeholders via email. Click the email icon and select recipients.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                                <div style="background: #10b981; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.3em; margin-right: 15px;">📊</div>
+                                <h3 style="color: #059669; margin: 0; font-size: 1.2em;">Create Charts from Queries</h3>
+                            </div>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Turn query results into visual charts (pie, bar, line). Great for dashboards showing bug trends, sprint progress, etc.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                                <div style="background: #10b981; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.3em; margin-right: 15px;">🔔</div>
+                                <h3 style="color: #059669; margin: 0; font-size: 1.2em;">Set Query Alerts</h3>
+                            </div>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Get notified when query results change. Example: "Alert me when a new high-priority bug is created."
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                                <div style="background: #10b981; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.3em; margin-right: 15px;">⚙️</div>
+                                <h3 style="color: #059669; margin: 0; font-size: 1.2em;">Column Options</h3>
+                            </div>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Customize which columns appear in results. Add/remove fields like Story Points, Tags, Iteration Path, etc.
+                            </p>
+                        </div>
+
+                        <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #cbd5e1;">
+                            <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                                <div style="background: #10b981; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.3em; margin-right: 15px;">🔗</div>
+                                <h3 style="color: #059669; margin: 0; font-size: 1.2em;">Copy Query URL</h3>
+                            </div>
+                            <p style="color: #334155; line-height: 1.7; font-size: 0.95em; margin: 0;">
+                                Share direct links to queries with team members. They can bookmark the URL for instant access to updated results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 25px; border-radius: 10px; border: 2px solid #f59e0b; text-align: center;">
+                    <p style="color: #92400e; font-size: 1.05em; line-height: 1.8; margin: 0;">
+                        <strong>🎯 Pro Tip:</strong> Well-crafted queries save hours each week. Invest time upfront to create queries that match your team's workflow, and everyone benefits!
+                    </p>
+                </div>
+
+            </div>
+        </div>
         </div>
     </div>
 
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">43</span>
+        <span id="current-slide">1</span> / <span id="total-slides">47</span>
     </div>
 
     <div class="navigation">
